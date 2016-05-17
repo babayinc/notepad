@@ -5,6 +5,14 @@ class Post
     @text = nil
   end
 
+  def self.post_types
+    [Memo, Link, Task]
+  end
+
+  def self.create(type_index)
+    return post_types[type_index].new
+  end
+
   def read_from_console
     #todo
   end
