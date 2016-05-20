@@ -10,7 +10,7 @@ class Post
   end
 
   def self.post_types
-    {'Memo' => Memo, 'Link' => Link, 'Task' => Task}
+    { 'Memo' => Memo, 'Link' => Link, 'Task' => Task, 'Tweet' => Tweet }
   end
 
   def self.create(type)
